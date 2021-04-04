@@ -5,5 +5,5 @@ git add *
 git commit -m 'message'
 
 
-//or add and commit 
+//or add and commit but this not work if create a new file
 git commit -a -m 'message' 
