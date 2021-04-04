@@ -1,0 +1,4 @@
+.DS_Store // will ignore files named.DS_Store
+forderName/ will ignore an entire directory 
+*.log will ignore any file with extention .log
+node_modules/ will ignore this folder and / for tell git this is folder 
