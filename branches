@@ -1,5 +1,6 @@
 // get the branch name
 git branch 
+git branch -v // get branches with last commit
 
 // create branch git branch <branch name> but without switch to this branch that mains the HEAD still in master branch
 git branch bugFix // create branch with name bugFix
@@ -9,3 +10,18 @@ git switch bugFix
 
 // switch to branch
 git checkout bugFix
+
+// create branch an swith to it 
+git switch -c <branch-name> // <=> git branch <branch-name> and git switch <branch-name>
+ 
+or
+ git checkout -b <branch-name>
+
+
+// delete branch you mush chechout out of branch 
+git branch -d <branch-name>
+git branch -D <branch-name> // delete without merge -D <=> -d --force
+
+// rename the branch you must to entre inside the branch 
+git branch -m <branch-new-name>
+
