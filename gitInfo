@@ -1,0 +1,9 @@
+git config
+
+ git --version     
+ git config user.email 
+ git config user.name 
+ git config --global core.editor "code --wait"
+ git log
+ git log --oneline
+ 
