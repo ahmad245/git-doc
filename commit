@@ -8,7 +8,3 @@ git commit -m 'message'
 //or add and commit but this not work if create a new file
 git commit -a -m 'message' 
 
-// create branch an swith to it 
-git switch -c <branch-name>
-
-// git checkout -b <branch-name>
