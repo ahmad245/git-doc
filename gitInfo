@@ -9,6 +9,8 @@ git config
  
  Amending Commits 
  // if you made mistake,just one commit ago 'previose commit' (if you forget to add and made commit -m direct)
- 
- 
+ git commit --amend
+ error
+ //The “fatal: refusing to merge unrelated histories”
+git pull origin master --allow-unrelated-histories
  
