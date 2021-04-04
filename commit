@@ -1,0 +1,8 @@
+// commit change
+git add name of files with paths 
+or
+git add *
+git commit -m 'message'
+
+//or add and commit 
+git commit -a -m 'message' 
