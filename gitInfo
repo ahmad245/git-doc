@@ -1,0 +1,14 @@
+git config
+
+ git --version     
+ git config user.email 
+ git config user.name 
+ git config --global core.editor "code --wait"
+ git log
+ git log --oneline
+ 
+ Amending Commits 
+ // if you made mistake,just one commit ago 'previose commit' (if you forget to add and made commit -m direct)
+ 
+ 
+ 
