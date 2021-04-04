@@ -6,3 +6,6 @@ git branch bugFix // create branch with name bugFix
 
 // switch to branch 
 git switch bugFix
+
+// switch to branch
+git checkout bugFix
