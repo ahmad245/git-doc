@@ -1,0 +1,11 @@
+// get the branch name
+git branch 
+
+// create branch git branch <branch name> but without switch to this branch that mains the HEAD still in master branch
+git branch bugFix // create branch with name bugFix
+
+// switch to branch 
+git switch bugFix
+
+// switch to branch
+git checkout bugFix
