@@ -11,6 +11,7 @@ git switch bugFix
 git checkout bugFix
 
 // create branch an swith to it 
-git switch -c <branch-name>
-
-// git checkout -b <branch-name>
+git switch -c <branch-name> // <=> git branch <branch-name> and git switch <branch-name>
+ 
+or
+ git checkout -b <branch-name>
