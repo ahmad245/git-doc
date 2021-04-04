@@ -15,3 +15,8 @@ git switch -c <branch-name> // <=> git branch <branch-name> and git switch <bran
  
 or
  git checkout -b <branch-name>
+
+
+// delete branch you mush chechout out of branch 
+git branch -d <branch-name>
+git branch -D <branch-name> // delete without merge -D <=> -d --force
