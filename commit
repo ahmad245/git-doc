@@ -8,3 +8,9 @@ git commit -m 'message'
 //or add and commit but this not work if create a new file
 git commit -a -m 'message' 
 
+//Undo the Last Commit
+git log --oneline // for get the commit hash
+git checkout <commit hash> or git switch <commit hash> 
+git checkout -b new_branch_name  //HEAD is now at <commit hash>... <commit message>
+git revert <commit hash>
+git checkout <current branch>
