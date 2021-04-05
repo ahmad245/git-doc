@@ -1,4 +1,4 @@
-// discard last add but not yet commit
+// discard last add but not yet commit (to discard changes in working directory)
 git checkout HEAD <filename>
 
 or
@@ -6,3 +6,6 @@ git restore <filename> <=> git chechout HEAD <filename>
 
 // git resotre to commit 
 git resotre --source HEAD~2 <filename>
+
+// restore un stage file but not removed from directory
+git restore --staged <filename> // (this to unstage )
