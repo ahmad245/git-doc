@@ -1,2 +1,8 @@
-for reset or discard the changes in stage after commit but still in work directory
-git reset <commithash>
+for reset or remove the changes from 1-stage just  or 2- stage and work directory after commit
+
+// remove the changes from stage just but still in work directory
+git reset <commit-hash>
+
+
+// remove the changes from the stage and from the work directory
+git reset --hard <commit-hash>
