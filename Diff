@@ -1,0 +1,21 @@
+DIFF
+ 1-befor  befor add  git diff
+ 2-after add  git diff --staged (are currently stage)
+ 3-befor or after add or commit git diff HEAD 
+ 4-only for one file 
+
+//1- git diff between the directory and staging area (befor add or commit) (unsatge)
+git diff
+
+//2- diffrence between my last commit and staging area just after add  
+git diff --staged
+git diff --cached
+
+//3- git diff between the directory and staging area befor or after add or commit (stage or unstage)
+git dif HEAD
+
+
+//4- only for one file 
+git diff HEAD <filename>
+git diff --staged <filename>
+git diff <filename> 
