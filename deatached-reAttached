@@ -1,0 +1,14 @@
+// deatached
+//1- for examine the contents of the old commit , edit or view files,...etc
+//2- create a new branch and switch to it,you can make a save changes 
+git chechout <commit-hash>
+
+// re attached to master or another branch
+git switch master
+
+
+
+// for checkout to befor last commit instad use commit hash 
+git checkout HEAD~1 // befor last commit
+git checkout HEAD~2 // befor befor last commit
+git checkout HEAD~3

@@ -1,0 +1,5 @@
+// if you want to switch to another branch but you dont want to take this changes with you, ( you do not want to make commit )
+git stash // to save the changes in shash
+git stash pop // to get changes from stash
+git stash list
+git stash drop stash@{2}
