@@ -6,3 +6,11 @@ git reset <commit-hash>
 
 // remove the changes from the stage and from the work directory
 git reset --hard <commit-hash>
+
+// note reset from the commit hash to rest of commit ex:
+commit 1
+commit 2
+commit 3
+commit 4
+
+git reset <hash of commit 3> // this will remove all commit 1 ,commit 2 , commit 3
