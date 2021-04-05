@@ -1,3 +1,8 @@
 // discard last add but not yet commit
 git checkout HEAD <filename>
 
+or
+git restore <filename> <=> git chechout HEAD <filename>
+
+// git resotre to commit 
+git resotre --source HEAD~2 <filename>
