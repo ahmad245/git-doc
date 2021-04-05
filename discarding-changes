@@ -1,3 +1,6 @@
+// discard last add but not yet commit
+git checkout HEAD <filename>
+
 first commit
 second commit
 third commit 
