@@ -1,0 +1,2 @@
+for reset or discard the changes in stage after commit but still in work directory
+git reset <commithash>
