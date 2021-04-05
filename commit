@@ -7,6 +7,7 @@ git commit -m 'message'
 
 //or add and commit but this not work if create a new file
 git commit -a -m 'message' 
+git commit -am 'message'
 
 //Undo the Last Commit
 git log --oneline // for get the commit hash
