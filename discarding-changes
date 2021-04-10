@@ -1,13 +1,29 @@
+//1- discard befor staged (befor add)
+//2-discard after stageg (after add)
+//3- discard after commit 
+
+1-
 // discard last modif  but not yet added (staged) or not yet commit (to discard changes in working directory)
 git checkout HEAD <filename>
 
 or
 git restore <filename> <=> git chechout HEAD <filename>
 
+2-
 // discard last modif after added but not yet commit
 git resotre --staged <filename>
 // git resotre to commit 
 git resotre --source HEAD~2 <filename>
 
-// restore un stage file but not removed from directory
+// restore un stage file 
 git restore --staged <filename> // (this to unstage )
+
+
+3-
+// discard change after commit we will use reset 
+// remove the changes from stage just but still in work directory
+git reset <commit-hash>
+
+
+// remove the changes from the stage and from the work directory
+git reset --hard <commit-hash>
