@@ -1,9 +1,11 @@
-// discard last add but not yet commit (to discard changes in working directory)
+// discard last modif  but not yet added (staged) or not yet commit (to discard changes in working directory)
 git checkout HEAD <filename>
 
 or
 git restore <filename> <=> git chechout HEAD <filename>
 
+// discard last modif after added but not yet commit
+git resotre --staged <filename>
 // git resotre to commit 
 git resotre --source HEAD~2 <filename>
 
