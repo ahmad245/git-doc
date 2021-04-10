@@ -1,0 +1,6 @@
+//1 reset the the commit but without --hard
+git reset <commit hash>
+//2-create new branch 
+git switch -c newbranch
+//3 git add * git commit -m 'move commits'
+//4 git switch to masterBranch (optional)

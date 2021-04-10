@@ -1,6 +1,6 @@
 //1- discard befor staged (befor add)
 //2-discard after stageg (after add)
-//3- discard after commit 
+//3- discard after commit return to specific commit 
 
 1-
 // discard last modif  but not yet added (staged) or not yet commit (to discard changes in working directory)
