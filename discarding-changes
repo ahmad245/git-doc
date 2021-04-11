@@ -1,6 +1,7 @@
-//1- discard befor staged (befor add)
-//2-discard after stageg (after add)
-//3- discard after commit return to specific commit 
+//1- discard befor staged (befor add) (restore)
+//2-discard after stageg (after add) (restore)
+//3- discard after commit return to specific commit (reset)
+//4-discard after commit return to specific commit (revert)
 
 1-
 // discard last modif  but not yet added (staged) or not yet commit (to discard changes in working directory)
@@ -27,3 +28,7 @@ git reset <commit-hash>
 
 // remove the changes from the stage and from the work directory
 git reset --hard <commit-hash>
+
+4-
+//discard the changes after commit but using revert (revert will create a new commit and store the changes in this commit this usful if we work with group)
+git revert
