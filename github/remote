@@ -1,0 +1,18 @@
+1-get remote 
+2-add remote 
+3-rename remote
+4-remove
+
+//1- to get the remote project for local prject
+git remote 
+git remote -v
+
+//2- to add local project to remote repository
+git remote  add <name normal origin> <url on remote> // tell github to remember this name for this url 
+ex: git remote origin https://github.com/ahmad245/repo.git
+
+//3- rename 
+git remote rename <old> <url>
+
+//4-remove 
+git remote remove <name>
