@@ -1,0 +1,7 @@
+fetch : get the changes from remote and put it in stage not in workdirectory
+pull : get the changes from remote and integreted it in stage and workdirectory
+
+//
+git fetch or git fetch <remote> <branch>
+ 
+git pull or get pull <remote> <branch> <=> git fetch + git merge
