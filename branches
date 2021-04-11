@@ -2,6 +2,9 @@
 git branch 
 git branch -v // get branches with last commit
 
+// get remote branch
+git branch -r // origin/master
+
 // create branch git branch <branch name> but without switch to this branch that mains the HEAD still in master branch
 git branch bugFix // create branch with name bugFix
 

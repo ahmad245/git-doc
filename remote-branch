@@ -1,0 +1,8 @@
+if you make a clone repository and want to work for specific branch
+
+// 
+git checkout --track origin/branch-name
+
+or
+//
+git switch baranch-name

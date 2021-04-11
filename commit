@@ -15,3 +15,6 @@ git checkout <commit hash> or git switch <commit hash>
 git checkout -b new_branch_name  //HEAD is now at <commit hash>... <commit message>
 git revert <commit hash>
 git checkout <current branch>
+
+// undo last commits form origin/master
+git chechout origin/master

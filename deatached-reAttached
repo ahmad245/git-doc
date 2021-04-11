@@ -12,3 +12,7 @@ git switch master
 git checkout HEAD~1 // befor last commit
 git checkout HEAD~2 // befor befor last commit
 git checkout HEAD~3
+
+
+// undo last commits form origin/master
+git chechout origin/master
