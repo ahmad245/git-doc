@@ -1,8 +1,19 @@
 if you make a clone repository and want to work for specific branch
 
-// 
+//1- check the name of branch remote 
+git branch -r 
+
+
+// 2-
 git checkout --track origin/branch-name
 
 or
-//
+// 
 git switch baranch-name
+
+or 
+// create a new branch keep track the baranch-name
+git switch -c newbranch 
+git add (what you want)
+git commit -m 'commit'
+git push origin newbranch
