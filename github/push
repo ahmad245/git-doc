@@ -1,0 +1,2 @@
+git push <remote> <branch> 
+ex : git push origin master

@@ -23,7 +23,7 @@ git branch -d <branch-name>
 git branch -D <branch-name> // delete without merge -D <=> -d --force
 
 // rename the branch you must to entre inside the branch 
-git branch -m <branch-new-name>
+git branch -M <branch-new-name>
 
 
 
