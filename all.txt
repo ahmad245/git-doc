@@ -19,3 +19,4 @@
 -git reset --hard <commit-hash>
 5-after commit but using revert remove the changes after commit but revert : will create a new commit and store the changes in this commit 
 git revert 
+6-another way to undo last commit 
