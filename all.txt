@@ -5,7 +5,7 @@
 -git config --global core.editor "code --wait"
 -git log 
 *git log --oneline
-
+/**********************************************************************/
 // (commit) 
 -git add <file-name-with-path>
 -git add * 
@@ -13,12 +13,12 @@
 -or note : this dont work if create a new file
 -git commit -a -m 'message'
 -git commit -am 'message'
-
+/**********************************************************************/
 // (Amending commits) if forget to made add and made commit -m direct
 -git commit --amend
 -error "the fatal : refusing to merge unrelated histories
 -git pull origin master --allow-unrelated-histories  
-
+/**********************************************************************/
 // (discard changes (restore , reset))
 1-befor staged ('befor add)
 -git checkout HEAD <file-name>
@@ -38,17 +38,83 @@
 -git switch -c new-branch
 -git revert <commit-hash>
 -git switch origin master
-
+/**********************************************************************/
 // (branch)
+1-see the branches
 -git branch 
 -git branch -v // git branches with last commit
 -git branch -r // get remote branch
+2-create branch
 -git branch <branch-name>
 -git git switch <branch-name>
 or 
 -git switch -c <branch*name> <=> git branch <barnch-name> and git switch <branch-name>
+3-delelte branch
 -git branch -d <branch- name> // delete branch
 -git branch -D <branch-name> // delete branch without merge
+4-rename branch
 -git branch -M <branch-new-name>
+5-merge baranch
 -git merge // merge branch
-
+/**********************************************************************/
+// (move commit to a new branch)
+1-reset the commit but without --hard 
+-git reset <commit-hash>
+2-create new branch
+-git switch -c <new-branch>
+3- stage the commit 
+-git add * 
+-git commit -m 'move the commit'
+4-switch to master branch
+-git switch master
+/**********************************************************************/
+// (stash) // if you want to switch to another branch but you dont want to take this changes with you, ( you do not want to make commit )
+git stash // to save the changes in stash 
+git stash pop // to get the changes from stash
+git stash list 
+git stash drop stash@{2}
+/**********************************************************************/
+// (deatached) for (examine the contents of the old commit , edit or view files,...etc )or (for  create a new branch and switch to it,you can make a save changes)
+1-deatached
+-git chechout <commit-hash>
+2-re attached to master or another branch
+-git switch master
+3-for checkout to befor last commit instad use commit hash 
+git checkout HEAD~1 // befor last commit
+git checkout HEAD~2 // befor befor last commit
+git checkout HEAD~3
+/**********************************************************************/
+// (diff)
+1- git diff between the directory and staging area (befor add) (unsatge)
+-git diff 
+2- diffrence between my last commit and staging area just after add  
+-git diff --staged
+-git diff --cached
+3- git diff between the directory and staging area befor or after add (stage or unstage)
+-git dif HEAD
+4- only for one file 
+-git diff HEAD <filename> // or multiple files
+-git diff --staged <filename>
+-git diff <filename> 
+5- diff between two branches
+-git diff branch1 branch2
+6-diff between two commit 
+-git diff commithash1 commithash2
+/**********************************************************************/
+// (remote)
+1-get remote for local project
+-git remote
+-git remote -v
+2-to add local project to remote repository
+-git remote  add <name normal origin> <url on remote> // tell github to remember this name for this url 
+ex: git remote origin https://github.com/ahmad245/repo.git
+3- rename 
+-git remote rename <old> <url>
+4-remove 
+-git remote remove <name>
+/**********************************************************************/
+// (pull and fetch)
+1-fetch : get the changes from remote and put it in stage not in workdirectory
+git fetch or git fetch <remote> <branch>
+2-pull : get the changes from remote and integreted it in stage and workdirectory
+-git pull or get pull <remote> <branch> <=> git fetch + git merge
