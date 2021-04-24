@@ -1,0 +1,21 @@
+// (commit) 
+-git add <file-name-with-path>
+-git add * 
+-git commit -m 'message'
+-or note : this dont work if create a new file
+-git commit -a -m 'message'
+-git commit -am 'message'
+
+// (discard changes (restore , reset))
+1-befor staged ('befor add)
+-git checkout HEAD <file-name>
+-git restore <file-name>
+2-after add but not yet commit
+-git restore --staged <file-name>
+-git restore --source HEAD~2 <file-name> resotre to commit 
+3-after commit remove the changes from stage but still in workdirectory
+-git reset <commit-hash> 
+4-after commit remove the changes form the stage and workdirectory
+-git reset --hard <commit-hash>
+5-after commit but using revert remove the changes after commit but revert : will create a new commit and store the changes in this commit 
+git revert 
