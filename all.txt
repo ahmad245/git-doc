@@ -1,3 +1,11 @@
+// (git config)
+-git --version
+-git config user.email
+-git config user.name
+-git config --global core.editor "code --wait"
+-git log 
+*git log --oneline
+
 // (commit) 
 -git add <file-name-with-path>
 -git add * 
@@ -5,6 +13,11 @@
 -or note : this dont work if create a new file
 -git commit -a -m 'message'
 -git commit -am 'message'
+
+// (Amending commits) if forget to made add and made commit -m direct
+-git commit --amend
+-error "the fatal : refusing to merge unrelated histories
+-git pull origin master --allow-unrelated-histories  
 
 // (discard changes (restore , reset))
 1-befor staged ('befor add)
@@ -18,5 +31,24 @@
 4-after commit remove the changes form the stage and workdirectory
 -git reset --hard <commit-hash>
 5-after commit but using revert remove the changes after commit but revert : will create a new commit and store the changes in this commit 
-git revert 
+-git revert 
 6-another way to undo last commit 
+-git log --oneline // for get the commit hash
+-git switch <commit-hash>
+-git switch -c new-branch
+-git revert <commit-hash>
+-git switch origin master
+
+// (branch)
+-git branch 
+-git branch -v // git branches with last commit
+-git branch -r // get remote branch
+-git branch <branch-name>
+-git git switch <branch-name>
+or 
+-git switch -c <branch*name> <=> git branch <barnch-name> and git switch <branch-name>
+-git branch -d <branch- name> // delete branch
+-git branch -D <branch-name> // delete branch without merge
+-git branch -M <branch-new-name>
+-git merge // merge branch
+
