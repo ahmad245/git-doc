@@ -78,11 +78,15 @@ git stash drop stash@{2}
 1-deatached
 -git chechout <commit-hash>
 2-re attached to master or another branch
--git switch master
+-git switch branchName
+-git switch - // switch to your branch 
+ or
+-git chechout origin/branchName
 3-for checkout to befor last commit instad use commit hash 
-git checkout HEAD~1 // befor last commit
-git checkout HEAD~2 // befor befor last commit
-git checkout HEAD~3
+-git checkout HEAD~1 // befor last commit
+-git checkout HEAD~2 // befor befor last commit
+-git checkout HEAD~3
+
 /**********************************************************************/
 // (diff)
 1- git diff between the directory and staging area (befor add) (unsatge)
