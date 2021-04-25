@@ -131,5 +131,7 @@ git fetch or git fetch <remote> <branch>
 -git rebase master
 2-as a cleanup tool (rewriting history) sometimes we want to rewrite,delete,rename,or reorder commits (before sharing them)
 -git rebase -i HEAD~4 =>go back 4 commits
-
+/**********************************************************************/
+//(reflogs) are local also expire : git cleans out old entires after around 90 days
+git reflog show HEAD // or branch 
 
