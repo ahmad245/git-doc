@@ -56,6 +56,8 @@ or
 -git branch -M <branch-new-name>
 5-merge baranch
 -git merge // merge branch
+6-if we want the last changes form master branch 
+-git merge master  // ex if we are inside the feat branch => we will merge master branch in feat branch
 /**********************************************************************/
 // (move commit to a new branch)
 1-reset the commit but without --hard 
@@ -105,12 +107,12 @@ git stash drop stash@{2}
 6-diff between two commit 
 -git diff commithash1 commithash2
 /**********************************************************************/
-// (remote)
+// (remote) we can have more remote for ex : when we make fork
 1-get remote for local project
 -git remote
 -git remote -v
 2-to add local project to remote repository
--git remote  add <name normal origin> <url on remote> // tell github to remember this name for this url 
+-git remote  add <name  origin or upstream or ...> <url on remote> // tell github to remember this name for this url 
 ex: git remote origin https://github.com/ahmad245/repo.git
 3- rename 
 -git remote rename <old> <url>
@@ -122,3 +124,12 @@ ex: git remote origin https://github.com/ahmad245/repo.git
 git fetch or git fetch <remote> <branch>
 2-pull : get the changes from remote and integreted it in stage and workdirectory
 -git pull or get pull <remote> <branch> <=> git fetch + git merge
+/**********************************************************************/
+// (rebase) 
+1-as an alternative to merge (but not rebase in the commits shared with athor peoples )
+-git switch feature
+-git rebase master
+2-as a cleanup tool (rewriting history) sometimes we want to rewrite,delete,rename,or reorder commits (before sharing them)
+-git rebase -i HEAD~4 =>go back 4 commits
+
+

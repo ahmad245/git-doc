@@ -1,4 +1,4 @@
 // merge branch 
-git merge
+git merge <branch-name>
 
 // add confli after merg
